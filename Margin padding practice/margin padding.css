@@ -1,0 +1,64 @@
+#baslik_main{
+    background-color: rgba(146, 140, 108, 0.3);
+}
+
+#baslik_main_child{
+    background-color: rgba(146, 140, 108, 0.2);
+    margin: 20px;
+    width: 430px;
+    border: 45px solid rgba(146, 140, 108, 0.4);
+    border-radius: 22px;
+    padding: 24px;
+    margin-top: 75px;
+}
+
+#baslik_side{
+    background-color: rgba(146, 140, 108, 0.4);
+    margin-bottom: 75p;
+}
+#t45{
+    background-color: rgba(139, 219, 137, 0.1);
+    padding: 33px;
+}
+
+.mother_box{
+    background-image: url(../6dff87c949c50c73d469b4e65e6f4213.jpg);
+}
+
+.box1{
+    background-color: rgba(139, 219, 137, 0.1);
+    width: 100px;
+    height: 200px;
+    border: 10px solid black;
+    padding: 25px;
+    box-sizing: content-box;
+}
+.box2{
+    background-color: rgba(139, 219, 137, 0.2);
+    width: 100px;
+    height: 200px;
+    border: 10px solid black;
+    padding: 25px;
+    box-sizing: content-box;
+}
+.box3{
+    background-color: rgba(139, 219, 137, 0.3);
+    width: 100px;
+    height: 200px;
+    border: 10px solid black;
+    padding: 25px;
+    box-sizing: content-box;
+}
+
+a{
+    text-decoration: none;
+    margin: 20px;
+    border: 20px rgb(230, 175, 112);
+    padding: 25px;
+    border-radius: 50px;
+    color: green;
+}
+
+a:visited {
+    color: rgb(229, 190, 255);
+}

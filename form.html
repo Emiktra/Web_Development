@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="result.html" method='GET'>
+            <div>
+                <label for="t444">Search </label>
+                <br>
+                <input type="search" id="t444" name='searched'>
+                <br><br>
+            </div>
+            <div >
+                <label for="t645">Name:</label>
+                <input id='t645' type="text" name="Name" placeholder="Ali" required/>
+                <br>
+                <label for="t644">Surname:</label>
+                <input id='t644' type="text" name="Surname" placeholder="Hasan"/>
+                <br>
+                <label for="t643">password:</label>
+                <input id='t643' type="password" name="password" required/>
+                <br>
+            </div>
+            <br>
+            <!--to bind a radio together, match the names-->
+            <div>
+                <label for="">Gender:</label>
+                <br>
+                <input id="1" type="radio" name='male' value="Male" checked>
+                <label for="1">Male </label>
+                <br>
+                <input id="2" type="radio" name='male' value="Female">
+                <label for="2">Female </label>
+            </div>
+            <br>
+            <div>
+                <label>Pick your favorite animal/s</label>
+                <br>
+                <input id='panda' type="checkbox" name="panda" value="panda">
+                <label for="panda">Panda</label>
+                <br>
+                <input id='Horse' type="checkbox" name="horse" value="Horse">
+                <label for="horse">Horse</label>
+            </div>
+            <div>
+                <label for="age">Age: <br></label>
+                <input id='age' type="number" name="age" min="8" max="130" placeholder="8">
+            </div>
+            <div>
+                <label for="t634">Chooose a Color</label>
+                <input type="color" name="chosen color" id="t634">
+            </div>
+            <div>
+                <br>
+                <label for="t543">Date: <br></label>
+                <input type="date" id="t543" name="Date" min="2005-01-01" max="2030-12-30">
+            </div>
+            <div>
+                <br>
+                <label for="t584">E-Mail <br></label>
+                <input type="email" id="t584" name="mail" placeholder="example@gmail.com" required>
+            </div>
+            <div>
+                <br>
+                <label for="t745">Pick a file to upload: <br></label>
+                <input type="file" id="t745" name="User File">
+            </div>
+            <br><br>
+                <input type="reset" value="Reset"> 
+                <input type="submit" name="Submit">
+            <div>
+                <label for="t744">Phone number: <br></label>
+                <input type="tel" name="phone number" id="t744"  pattern="[0-9]{3}">
+            </div>
+        </form>
+    </body>
+</html>

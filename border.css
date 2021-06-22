@@ -1,0 +1,41 @@
+.div1{
+    background-color: lightgray;
+    border: solid greenyellow;
+    width: auto;
+    padding-top: 23px;
+    padding-bottom: 25px;
+    padding-right: 12px;
+    padding-left: 12px;
+    /* or do it in one line. order is top, right, bottom, left. clockwise*/
+    padding: 23px 12px 25px;
+}
+
+#a1a{
+    border-width: 3px;
+   border-style: ridge; 
+   border-color: indianred;
+}
+
+#a2a{
+    border-width: 3px;
+   border-style: ridge; 
+   border-color: indianred;
+}
+
+#a3a{
+    border-width: 3px;
+   border-style: ridge; 
+   border-color: indianred;
+}
+
+#a4a{
+    border-width: 3px 4px 5px 6px;
+   border-style: ridge; 
+   border-color: indianred;
+}
+
+#a5a{
+    border-width: 3px;
+   border-style: ridge; 
+   border-color: indianred;
+}

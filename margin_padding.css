@@ -1,0 +1,46 @@
+.container {
+  background-color: bisque;
+  /* padding: 3px; */
+}
+
+.box1 {
+  background-color: chocolate;
+  width: 100px;
+  height: 100px;
+  border: 15px solid red;
+  margin-top: 30px;
+  margin-top: 80px;
+}
+.box2 {
+  background-color: darkmagenta;
+  width: 100px;
+  height: 100px;
+  border: 15px solid blue;
+  /* margin: 30px; */
+  /* padding: 50px; */
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.box3 {
+  background-color: rgb(30, 173, 17);
+  width: 100px;
+  height: 100px;
+  border: 15px solid grey;
+}
+
+a {
+  text-decoration: none;
+  margin-right: 10px;
+  border: 1px solid darkorange;
+  padding: 10px;
+  border-radius: 15px;
+  color: darkorange;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background-color: gray;
+}

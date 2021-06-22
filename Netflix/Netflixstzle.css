@@ -1,0 +1,79 @@
+* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-image: url(./ZA-en-20191203-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+}
+
+#t54{
+    width: 1240px;
+    height: 1036px;
+    background-color: rgba(69, 68, 80, 0.4);
+    margin: auto;
+    margin-top: 30px;
+}
+
+#netflix1{
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+#t54_span{
+    color: red;
+}
+
+#netflix_desc{
+    font-size: 1rem;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+#headert1{
+    text-align: center;
+}
+
+#survey_area_container{
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    padding: 15px 45px;
+}
+
+#survey_areaa{
+    margin-top: 25px;
+    max-width: 460px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+#name_user,
+#age_user,
+#email_user,
+#content_user,
+#typemovie_user,
+#gender_user,
+#feedback_user{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.a{
+    margin-top: 20px;
+}
+
+#submit_btn{
+    width: 160px;
+    height: 45px;
+    background-color: red;
+    color:white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: auto;
+}

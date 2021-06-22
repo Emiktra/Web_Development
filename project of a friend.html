@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tekrar</title>
+    <style>
+        #outer-container {
+            /* background-color: rgba(58, 60, 172, 0.623); */
+            width: 70%;
+            height: auto;
+            margin: auto;
+            text-align: center;
+        }
+        #inner-container {
+            /* background-color: #6643439f; */
+            display: inline-block;
+            width: auto;
+            height: auto;
+            margin: auto;
+            text-align: justify;
+        }
+        .sekil1:hover {
+            background-color: cornsilk;
+        }
+        .sekil2:hover {
+            background-color: crimson;
+        }
+        .btn {
+            background-color: darkseagreen;
+            color: rgb(122, 4, 4);
+            /* width: 100px; */
+            /* height: 30px; */
+            padding: 15px 40px;
+        }
+        .btn1:hover {
+            background-color: red;
+            padding: 20px 50px;
+        }
+        .btn2:hover {
+            background-color: greenyellow;
+            padding: 20px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer-container">
+        <div id="inner-container">
+            <fieldset style="background-color: rgb(120, 178, 185);">
+                <legend style="font-size: xx-large; color: rgb(151, 75, 75);">Başvuru Formu</legend>
+                <form action="result.html" method="GET">
+                    <table>
+                        <tr>
+                            <td><label for="ad">Name</label></td>
+                            <td>:</td>
+                            <td><input class="sekil1" type="text" name="isim" id="ad"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="soyad">Soy Ad</label></td>
+                            <td>:</td>
+                            <td><input class="sekil1" type="text" name="soyisim" id="soyad"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Şifre</label></td>
+                            <td>:</td>
+                            <td><input class="sekil2" type="password" name="şifre" id="pass"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Cinsiyet</label></td>
+                            <td>:</td>
+                            <td>
+                                <label for="erkek">Erkek</label>
+                                <input type="radio" name="gender" id="erkek" value="erkek">
+                                <label for="kadın">Kadın</label>
+                                <input type="radio" name="gender" id="kadın" value="kadın">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Hobiler</label></td>
+                            <td>:</td>
+                            <td>
+                                <label for="hobi1">Film</label>
+                                <input type="checkbox" name="hobi" id="hobi1" value="Film">
+                                <label for="hobi2">Müzik</label>
+                                <input type="checkbox" name="hobi" id="hobi2" value="Müzik">
+                                <label for="hobi3">Spor</label>
+                                <input type="checkbox" name="hobi" id="hobi3" value="Spor">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="yas">Yaşınız</label></td>
+                            <td>:</td>
+                            <td><input type="number" name="yaş" id="yas" min="10" max="65"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="arama">Aranacak Kelime</label></td>
+                            <td>:</td>
+                            <td><input type="search" name="arandı" id="arama" placeholder="Arama yapınız"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="renk">Renk Seçiniz</label></td>
+                            <td>:</td>
+                            <td><input type="color" name="Seçilen Renk" id="renk"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tarih">Tarih Belirleyiniz</label></td>
+                            <td>:</td>
+                            <td><input type="date" name="Belirlenen Tarih" id="tarih"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Mailinizi Giriniz</label></td>
+                            <td>:</td>
+                            <td><input type="email" name="mail adres" id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dosya">Dosya Ekleyin</label></td>
+                            <td>:</td>
+                            <td><input type="file" name="Gönderilen Dosya" id="dosya" multiple></td>
+                        </tr>
+                        <tr>
+                            <td><label for="telno">Telefon Numaranız</label></td>
+                            <td>:</td>
+                            <td><input type="tel" name="Telefon" id="telno" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                                    placeholder="5XXXXXXXXX"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tatlı">Hangi tatlıyı seversiniz?</label></td>
+                            <td>:</td>
+                            <td>
+                                <select name="Seçilen Tatlı" id="tatlı">
+                                    <optgroup label="Sütlü Tatlılar">
+                                        <option value="Keşkül">Keşkül</option>
+                                        <option value="Sütlaç">Sütlaç</option>
+                                        <option value="Muhallebi">Muhallebi</option>
+                                    </optgroup>
+                                    <optgroup label="Şerbetli Tatlılar">
+                                        <option value="Baklava">Baklava</option>
+                                        <option value="Künefe">Künefe</option>
+                                        <option value="Kadayıf">Kadayıf</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><textarea name="yorum" id="" cols="35" rows="6" placeholder="Yorum yazınız..."
+                                    style="resize: none;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input class="btn1 btn" type="reset" value="RESET">
+                                <input class="btn2 btn" type="submit" value="SENT">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

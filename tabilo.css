@@ -1,0 +1,37 @@
+/*div p {
+    color: red;
+}*/
+/* .container p {
+    color: green;
+} */
+
+p + div {
+    color: indigo;
+}
+
+h3[title='Helo']{
+    color: lawngreen;
+}
+
+p[title='Helo']{
+    color: brown;
+}
+p[target='_blank']{
+    font-size: 2rem;
+}
+
+p::first-letter{
+    color: yellow;
+}
+
+ul li{
+    padding: 12px;
+    margin: 5px;
+    background-color: gray;
+    border-radius: 50px;
+    list-style-type: "→";
+}
+
+ul li:first-child {
+    background-color: palevioletred;
+}
