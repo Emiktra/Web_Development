@@ -10,11 +10,14 @@ body, ul, li, h1, h2, a{
     background-color: #F63232;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
+    position: static;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+  .a{
+      width: 100%;
   }
   header h1{
     color: white;

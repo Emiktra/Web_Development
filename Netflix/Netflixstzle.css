@@ -12,7 +12,7 @@ body{
 #t54{
     width: 1240px;
     height: 1036px;
-    background-color: rgba(69, 68, 80, 0.4);
+    background-color: rgba(69, 68, 80, 0.7);
     margin: auto;
     margin-top: 30px;
 }
@@ -39,7 +39,7 @@ body{
 
 #survey_area_container{
     max-width: 500px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     margin: auto;
     padding: 15px 45px;
 }
@@ -47,7 +47,7 @@ body{
 #survey_areaa{
     margin-top: 25px;
     max-width: 460px;
-    margin: auto;
+    margin: center;
     font-size: 1rem;
 }
 
