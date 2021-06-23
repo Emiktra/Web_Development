@@ -2,18 +2,23 @@ body{
     width: auto;
     height: auto;
     justify-content: center;
+    text-align: center;
 }
 .TopBar{
     padding: 10px;
     display: inline;
     width: 100%;
 }      
-.TopBar > span{
+.TopBar > #a2{
     float: right;
+}
+.TopBar > #a3{
+    float: left;
 }
 .TopBar1{
     background-color: none;
     padding: 0.35rem;
+    font-size: 0.8rem;
     vertical-align: middle;
     text-decoration: none;
     color: black;
