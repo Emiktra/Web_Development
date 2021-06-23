@@ -1,8 +1,57 @@
+body{
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+.TopBar{
+    padding: 10px;
+    display: inline;
+    width: 100%;
+}      
+.TopBar > span{
+    float: right;
+}
+.TopBar1{
+    background-color: none;
+    padding: 0.35rem;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    font-family: sans-serif;
+}
+#login{
+    background-color: rgb(67, 105, 228);
+    padding: 0.6rem 1.6rem;
+    color: white;
+    font-weight: 60;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 4px;
+}
+#login:hover{
+    background-color: rgb(76, 112, 230);
+}
 .title{
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin: auto;
-    margin-top: -40px;
+    margin-bottom: -150px;
+    clear: both;
 }
 #sBar{
-    font-size: 3rem;
+    font-size: 1.3rem;
+    padding: 17px;
+    width: 75%;
+    border-radius: 40px;
+    border-color: rgba(0, 0, 0, 0.25);
+    box-shadow: none;
+    outline: none; /* removes the default outline */
+    max-width: 750px;
+    min-width: 25rem;
+}
+#sBar:focus{
+    border-color: rgba(0, 0, 0, 0.6);
 }
