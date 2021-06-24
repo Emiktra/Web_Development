@@ -60,3 +60,19 @@ body{
 #sBar:focus{
     border-color: rgba(0, 0, 0, 0.6);
 }
+#magnifying{
+    width: auto;
+    height: 7%;
+    vertical-align: center;
+    position: relative;
+    left: 45px;
+    top: 20px;
+}
+#microphone{
+    width: 2.5%;
+    height: 2.5%;
+    position: relative;
+    vertical-align: center;
+    top: 15px;
+    right: 45px;
+}
