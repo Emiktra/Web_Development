@@ -1,0 +1,140 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#microphone{
+    height: 24px;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline;
+}
+ul a{
+    text-decoration: none;
+    color: #5f6368;
+}
+a:hover{
+    text-decoration: underline;
+}
+header{
+    float: right;
+    margin-right: 20px;
+}
+main{
+    clear: both;
+    padding-top: 1px;
+}
+#appicon{
+    vertical-align: middle;
+    opacity: 0.6;
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+}
+#sign-in{
+    background-color: #4285f4;
+    border: none;
+    height: 30px;
+    width: 70px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#appicon:hover{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+.sBar{
+    width: 583px;
+    height: 44px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin: 28px auto;
+}
+.sBar:hover{
+    box-shadow: 0 0 10px lightgray;
+}
+#microphone{
+    height: 24px;
+    position: relative;
+    top: 9px;
+    right: -20px;
+    cursor: pointer;
+}
+#logo{
+    width: 272px;
+    height: 92px;
+    display: block;
+    margin: 170px auto 0;
+}
+#mag{
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 9px;
+    left: 8px;
+}
+#search{
+    height: 34px;
+    width: 460px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 3px;
+    font-size: 16px;
+}
+#keyboard{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btn-container{
+    text-align: center;
+}
+#btn1, #btn2{
+    height: 36px;
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+}
+#btn1:hover, #btn2:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px #5f6368;
+}
+#language{
+    text-align: center;
+    margin-top: 32px;
+    font-size: small;    
+}
+#langauge a:hover{
+    text-decoration: none;
+    color: #1a0dab;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.a{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.b{
+    float: right;
+    margin: 0 30px 0 0;
+}
