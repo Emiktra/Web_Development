@@ -1,0 +1,16 @@
+div p{
+    background-color: royalblue;
+    color: white;
+    padding: 5px;
+}
+div > p {
+    background-color: violet;
+    border: 6px solid black;
+}
+div + p {
+    background-color: turquoise;
+}
+div ~ p {
+    border-radius: 50px;
+    border: 6px solid black;
+}
