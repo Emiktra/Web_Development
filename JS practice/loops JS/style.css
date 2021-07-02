@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header h1 {
+  display: inline;
+  font-size: 2.5rem;
+  font-family: fantasy;
+}
+
+#list {
+  font-size: 1.5rem;
+}
+
+#list li {
+  background-color: lightgray;
+  margin: 10px;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 50px;
+}
+
+#cw {
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+
+#js {
+  height: 100px;
+  margin-right: 10px;
+}
