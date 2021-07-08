@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#header h1 {
+  display: inline;
+  font-size: 2rem;
+  font-family: fantasy;
+}
+
+#cw {
+  display: block;
+  margin: 20 auto;
+  width: 500px;
+}
+
+#js {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.class-info {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+#copy-right {
+  color: purple;
+}
+
+.front-end {
+  color: red;
+}
+.back-end {
+  color: green;
+}
+
+.banner {
+  color: brown;
+}
+
+.imp {
+  text-decoration: underline;
+}
