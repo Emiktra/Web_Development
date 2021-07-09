@@ -8,17 +8,57 @@ header{
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
+    
 }
 .icons{
     width: 1rem;
     height: 1rem;
 }
 body{
+
+}
+#body{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+    border: 5px solid green;
+    max-width: fit-content;
+    margin: auto;
 }
 .INFO{
 
 }
-.PAYMENT{
 
+
+.INFO, .PAYMENT{
+    margin: 40px;
+}
+
+
+.PAYMENT{
+    background-color: rgba(228, 227, 227, 0.7);
+    padding: 10px 50px 5px 20px;
+    border-radius: 10px;
+}
+.Items{
+    display: flex;
+    flex: 1;
+    margin: 10px 0;
+}
+.Item_options{
+    padding: 13px;
+}
+.shopping_pics{
+    width: 96px;
+    height: 110px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#Total{
+    padding-top: 30px
+}
+hr{
+    color: rgba(245, 241, 241, 0.472);
 }
