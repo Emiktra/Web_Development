@@ -9,82 +9,93 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>Checkout</header>
     <div id="body">
         <form action="result.html" method="GET">
         <section class="INFO">
-            <div class="Contact_info">
+            <div id="Contact_info">
                 <h3>Contact information</h3>
-                <div id="Email">
+                <div>
                     <label for="email">Email</label>
-                    <br>
-                    <img src="./email.png" alt="#" class="icons">
-                    <input type="email" id="email" name="email" 
-                    placeholder="enter your email..." required>
+                    <div id="Email">
+                        <img src="./mail.svg" alt="#" class="icons">
+                        <input type="email" id="mail" name="email" 
+                        placeholder="Enter your email..." required>
+                    </div>
                 </div>
-                <div id="Phone_number">
+                <div>
                     <label for="phone">Phone</label>
-                    <br>
-                    <img src="./call.png" alt="#" class="icons">
-                    <input type="tel" id="phone" name="phone number" 
-                    placeholder="Enter your phone..." required>
+                    <div id="Phone_number">
+                        <img src="./phone.svg" alt="#" class="icons">
+                        <input type="tel" id="phone" name="phone number" 
+                        placeholder="Enter your phone..." required>
+                    </div>
                 </div>
             </div>
-            <div class="Shipping_address">
-                <div id="Full_name">
+            <div id="Shipping_address">
+                <h3>Shipping address</h3>
+                <div>
                     <label for="full_name">Full Name</label>
-                    <br>
-                    <img src="./user.png" alt="#" class="icons">
-                    <input type="text" id="full_name" name="full name" 
-                    placeholder="Enter your Full name..." required maxlength="40">
+                    <div id="Full_name">
+                        <img src="./user.svg" alt="#" class="icons">
+                        <input type="text" id="fullname" name="full name" 
+                        placeholder="Enter your Full name..." required maxlength="40">
+                    </div>
                 </div>
-                <div id="Address">
+                <div>
                     <label for="address">Address</label>
-                    <br>
-                    <img src="./home.png" alt="#" class="icons">
-                    <input type="text" id="address" name="address" 
-                    placeholder="Enter your address..." required>
+                    <div id="Address">
+                        <img src="./house.svg" alt="#" class="icons">
+                        <input type="text" id="adres" name="address" 
+                        placeholder="Enter your address..." required>
+                    </div>
                 </div>
-                <div id="City">
+                <div>
                     <label for="city">City</label>
-                    <br>
-                    <img src="./city.png" alt="#" class="icons">
-                    <input type="text" id="city" name="city" 
-                    placeholder="Enter your city..." required>
+                    <div id="City">
+                        <img src="./city.svg" alt="#" class="icons">
+                        <input type="text" id="cit" name="city" 
+                        placeholder="Enter your city..." required>
+                    </div>
                 </div>
                 <div id="Country-Postal_code">
-                    <div id="Country">
+                    <div>
                         <label for="country">Country</label>
-                        <br>
-                        <img src="./earth.png" alt="#" class="icons">
-                        <select name="country" id="country" required>
-                            <option value="Turkey">Turkey</option>
-                            <option value="Germany">Germany</option>
-                            <option value="USA">USA</option>
-                            <option value="France">France</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Spain">Spain</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="Ireland">Ireland</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Poland">Poland</option>
-                            <option value="Russia">Russia</option>
-                        </select>
+                        <div id="Country">
+                            <img src="./earth.svg" alt="#" class="icons">
+                            <select name="country" id="countr" required>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Germany">Germany</option>
+                                <option value="USA">USA</option>
+                                <option value="France">France</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Spain">Spain</option>
+                                <option value="United Kingdom">UK</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Russia">Russia</option>
+                            </select>
+                        </div>
                     </div>
-                    <div id="Postal_code">
+                    <div>
                         <label for="postal_code">Post Code</label>
-                            <br>
-                        <img src="./postal.png" alt="#" class="icons">
-                        <input type="number" id="postal_code" name="postal_code" 
-                        placeholder="Enter your postal code..." required>
+                        <div id="Postal_code">
+                            <img src="./postal.svg" alt="#" class="icons">
+                            <input type="text" id="postal_cod" name="postal_code" 
+                            placeholder="Enter your postal code..." required>
+                        </div>
                     </div>
                 </div>
                 <input type="checkbox" id="save_info" name="save_info" value="save_info">
                 <label for="save_info">See this information next time</label><br>
             </div>
-            <input type="submit" name="Continue" value="Continue">
+            <input id='submit'type="submit" name="Continue" value="Continue">
         </form>
         </section>
         <section class="PAYMENT">
@@ -94,25 +105,26 @@
                         <img src="./backpack.png" alt="#" class="shopping_pics">
                     <div class="Item_options">
                         <label for="item_1">Vintage Backbag</label>
-                        <p><span class="old_price">$54.99</span>
-                        <span class="new_price">$94.99</span></p>
+                        <p><span class="new_price"><strong>$54.99</strong></span>
+                        <span class="old_price">$94.99</span></p>
                         <input type="number" id="item_a" name="item_1" 
-                        value="1" min="1" required max="100">
+                        value="1" min="0" required max="100">
                     </div>
                 </div>
                 <div class="Items">
                     <img src="./shoes.png" alt="#" class="shopping_pics">
                     <div class="Item_options">
                         <label for="item_2">Levi Shoes</label>
-                        <p><span class="old_price">$74.99</span>
-                        <span class="new_price">$124.99</span></p>
+                        <p><span class="new_price"><strong>$74.99</strong></span>
+                        <span class="old_price">$124.99</span></p>
                         <input type="number" id="item_b" name="item_2" 
-                        value="1" min="1" required max="100">
+                        value="1" min="0" required max="100">
                     </div>
                 </div>
                 <div id="Total">
                     <hr>
                     <label for="shipping">Shipping</label>
+                    <output>$23</output>
                     <hr>
                     <label for="total">Total</label>
                     <output name="totalPrice" for="item_1 item_2">129.98</output>

@@ -7,15 +7,7 @@ header{
     padding-top: 7px;
     text-align: center;
     font-size: 2rem;
-    font-weight: 600;
-    
-}
-.icons{
-    width: 1rem;
-    height: 1rem;
-}
-body{
-
+    font-weight: 600;  
 }
 #body{
     display: flex;
@@ -23,20 +15,93 @@ body{
     justify-content: center;
     align-items: flex-start;
     align-content: space-around;
-    border: 5px solid green;
     max-width: fit-content;
     margin: auto;
 }
+
+/* Info place for user info */
 .INFO{
-
+    background-color: none;
 }
-
+#Contact_info{
+    margin-top: 60px;
+}
+#Shipping_address{
+    margin-top: 50px;
+}
+#Shipping_address > h3,
+#Contact_info > h3{
+    color: #333;
+    margin-bottom: 10px;
+}
+.INFO label{
+    font-family: 'Montserrat', sans-serif;
+    color: #4f4f4f;
+    letter-spacing: 0.02rem;
+    font-size: 12px;
+}
+.icons{
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: 2px;
+}
+#Email,
+#Phone_number,
+#Full_name,
+#Address,
+#City,
+#Postal_code,
+#Country{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #828282;
+    border-radius: 5px;
+    padding: 5px 214px 5px 9px;
+    margin: 5px 0px;
+}
+#mail,
+#phone,
+#fullname,
+#adres,
+#cit,
+#postal_cod,
+#countr{
+    outline: none;
+    border: none;
+}
+#Country-Postal_code{
+    display: flex;
+    margin-top: 25px;
+}
+#Country{
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 0px 5px 9px;
+    margin-right: 10px;
+}
+#Postal_code{
+    padding: 5px 50px 5px 9px;
+}
+#save_info{
+    margin-right: 15px;
+}
+#submit{
+    background-color: #f2994a;
+    border-radius: 10px;
+    width: 80px;
+    color: white;
+    border: none;
+    padding: 14px 0px;
+    font: 600 13.33px Arial;
+    position: absolute;
+    left: 46%;
+    margin-top: 30px;
+}
 
 .INFO, .PAYMENT{
-    margin: 40px;
+    margin: 40px 40px 40px 15px;
 }
 
-
+/* Payment place for product details */
 .PAYMENT{
     background-color: rgba(228, 227, 227, 0.7);
     padding: 10px 50px 5px 20px;
@@ -47,18 +112,43 @@ body{
     flex: 1;
     margin: 10px 0;
 }
+.old_price{
+    text-decoration: line-through;
+    font-size: 0.75rem;
+}
+.new_price{
+    color: #f2994a;
+}
 .Item_options{
     padding: 13px;
+}
+.Item_options > label{
+    font-weight: 600;
+}
+.Item_options > p{
+    margin-top: 3px;
+}
+#item_a, #item_b{
+    margin-top: 5px;
+    background-color: rgba(228, 227, 227, 0.0);;
+    border: 1px solid rgb(136, 136, 136);
+    text-align: center;
+    width: 102px;
+    height: 35px;
+    border-radius: 5px;
 }
 .shopping_pics{
     width: 96px;
     height: 110px;
     border-radius: 10px;
-    margin-right: 10px;
+    margin: 3px 10px 3px 0px;
 }
 #Total{
-    padding-top: 30px
+    padding-top: 30px;
 }
 hr{
     color: rgba(245, 241, 241, 0.472);
+} 
+#Total > output{
+    float: right;
 }
