@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="guessTheNumber.css">
+</head>
+<body>
+    <header>
+        <h1 id="title_1">Guess the Number</h1>
+    </header>
+    <main id="main">
+        <h3>Pick a number between 1 and 100</h3>
+        <input type="text" id="userInput" required placeholder="Input a number (1-100)" name="userInput">
+        <button id="check">Check</button>
+        <h3>Attempt: <span id="count">0</span></h3>
+        <script src="./guessTheNumber.js"></script>
+    </main>
+    <footer>
+        <h4 class="explanation">How to play</h4>
+        <p class="explanations">A number between 1 and 100 is chosen by the computer and your job is to find it using as little attempts as possible.
+            Whenever you guess a number, the computer will tell you whether your pick is higher or lower than his pick number.
+        </p>
+        <p id="creator">made by Sami E.</p>
+    </footer>
+</body>
+</html>
