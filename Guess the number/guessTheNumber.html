@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess the Number</title>
     <link rel="stylesheet" href="guessTheNumber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body id="mainBody">
+    <div id="main2">
         <h1 id="title_1">Guess the Number</h1>
-    </header>
-    <main id="main">
-        <h3>Pick a number between 1 and 100</h3>
-        <input type="text" id="userInput" required placeholder="Input a number (1-100)" name="userInput">
-        <button id="check">Check</button>
-        <h3>Attempt: <span id="count">0</span></h3>
-        <script src="./guessTheNumber.js"></script>
-    </main>
-    <footer>
-        <h4 class="explanation">How to play</h4>
-        <p class="explanations">A number between 1 and 100 is chosen by the computer and your job is to find it using as little attempts as possible.
-            Whenever you guess a number, the computer will tell you whether your pick is higher or lower than his pick number.
-        </p>
-        <p id="creator">made by Sami E.</p>
-    </footer>
+        <main id="main">
+            <h3>Pick a number between 1 and 100</h3>
+            <input autocomplete="off" type="text" id="userInput" required placeholder="Input a number (1-100)" name="userInput">
+            <button id="check">Check</button>
+            <h3>Attempt: <span id="count">0</span></h3>
+            <script src="./guessTheNumber.js"></script>
+        </main>
+        <footer id="mainFooter">
+            <h4 id="explanation">How to play</h4>
+            <p id="explanations">A number between 1 and 100 is chosen by the computer and your job is to find it using as little attempts as possible.
+                Whenever you guess a number, the computer will tell you whether your pick is higher or lower than his pick</p>
+            <p id="creator">made by Sami E.</p>
+        </footer>
+    </div>
 </body>
 </html>

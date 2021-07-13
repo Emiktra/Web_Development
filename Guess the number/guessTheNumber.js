@@ -1,4 +1,5 @@
-const searchedNumber = Math.round(Math.random()*100)
+let searchedNumber = Math.round(Math.random()*100)
+if (searchedNumber < 1){ searchedNumber += 1}
 const check = document.getElementById('check')
 
 let userGuess;
@@ -39,11 +40,10 @@ function calculate(userGuess){
         element1.appendChild(message);
         document.getElementById('main').insertBefore(element1, document.getElementById('main').hasChildNodes[1]) 
     } else{
-        congrats()
+        window.location.href="./guessTheNumber_congrats.html"
+        sessionStorage.setItem('attempts', document.getElementById('count').innerHTML)
+        sessionStorage.setItem('searched', searchedNumber)
     }
-}
-function congrats(){
-    // create a div with elements inside for a congrats end screen. or just send the user to another page
 }
 
 check.addEventListener("click", checkViable);
