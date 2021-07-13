@@ -1,0 +1,72 @@
+ul li {
+    display: flex;
+}
+#invalid_input{
+
+}
+
+#title{
+
+}
+#TODO_list{
+
+}
+#add{
+
+}
+#addInput{
+
+}
+#addBtn{
+
+}
+#mainList{
+
+}
+main{
+    margin: 100px 0px;
+}
+footer{
+    justify-self: flex-end;
+}
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.chechbox{
+
+}
+.chechbox:checked{
+
+}
+.checkbox:hover
+
+
+.remove{
+
+}
+.remove:hover{
+
+}
+.removeChecked{
+
+}
+
+.text{
+
+}
+.textChecked{
+
+}
+
+.task{
+
+}
+.taskChecked{
+
+}
+.task:hover{
+
+}
