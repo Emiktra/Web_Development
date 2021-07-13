@@ -102,6 +102,7 @@
     background-color: rgba(170, 92, 115, 0.322);
     border-radius: 50px;
     padding: 0px 10px;
+    color: rgba(151, 65, 36, 0.705);
 }
 #congratsTitle:hover{
     letter-spacing: 1px;
