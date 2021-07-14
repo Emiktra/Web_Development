@@ -1,4 +1,5 @@
 const addBtn = document.getElementById('addBtn');
+const inputArea = document.getElementById('addInput')
 var mainList = document.getElementById('mainList');
 
 function addElement(){
@@ -21,9 +22,10 @@ function addElement(){
     var checkbox = document.createElement('input')
     checkbox.setAttribute('id', `checkbox${mainList.childElementCount}`)
     checkbox.setAttribute('type', 'checkbox')
-    var taskText = document.createElement('p')
+    checkbox.setAttribute('class', 'checkbox')
+    var taskText = document.createElement('label')
     taskText.setAttribute('class', 'text')
-    taskText.setAttribute('id', `text${mainList.childElementCount}`)
+    taskText.setAttribute('for', `checkbox${mainList.childElementCount}`)
     taskText.appendChild(document.createTextNode(elem));
     var closeButtun = document.createElement('button')
     closeButtun.setAttribute('class', 'remove')
@@ -34,26 +36,32 @@ function addElement(){
     mainDiv.appendChild(closeButtun)
     mainList.appendChild(mainDiv)
     closeButtun.addEventListener('click', removeElement.bind(0,`task${mainList.childElementCount -1}`))
-    checkbox.addEventListener('click', checkElement.bind(0,`task${mainList.childElementCount -1}`))
+    checkbox.addEventListener('click', checkElement.bind(0,mainList.childElementCount -1))
 }
 function removeElement(id){
     document.getElementById('mainList').removeChild(document.getElementById(id))
 }
 function checkElement(id){
-    var mainDiv = document.getElementById(id)
-    var taskText = document.getElementById(id)
-    var closeBtn = document.getElementById(id)
-    if (mainDiv.classList.contains('task')) {
-        mainDiv.setAttribute('class', 'taskChechked')
-        taskText.setAttribute('class', 'textChechked')
-        closeBtn.setAttribute('class', 'removeChechked')
-    } else {
+    var mainDiv = document.getElementById(`task${id}`)
+    var taskText = document.getElementById(`text${id}`)
+    var closeBtn = document.getElementById(`remove${id}`)
+    if (document.querySelector(`#checkbox${id}:checked`) == null) {
         mainDiv.setAttribute('class', 'task')
         taskText.setAttribute('class', 'text')
         closeBtn.setAttribute('class', 'remove')
+    } else {
+        mainDiv.setAttribute('class', 'taskChecked')
+        taskText.setAttribute('class', 'textChechked')
+        closeBtn.setAttribute('class', 'removeChechked')
+    }
+}
+function removeWarning(){
+    if (Boolean(document.getElementById('invalid_input'))) {
+        document.getElementById('invalid_input').parentNode.removeChild(document.getElementById('invalid_input'))
     }
 }
 
+inputArea.addEventListener('click', removeWarning)
 addBtn.addEventListener('click', addElement)
 document.getElementById('addInput').addEventListener('keypress', function (e){
     if (e.key === 'Enter'){
