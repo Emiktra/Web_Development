@@ -30,7 +30,7 @@ ul li {
     padding: 15px 80px;
 }
 #TODO_list:hover{
-    background-color: rgba(78, 83, 94, 0.65);
+    background-color: rgba(97, 97, 97, 0.65);
     padding: 20px 100px;
     border-radius: 0;
 }
@@ -41,14 +41,20 @@ ul li {
     border: 1px solid black;
 }
 #addInput{
-    padding: 10px;
+    padding: 11.15px;
+    outline: none;
+    border: none;
 }
 #addBtn{
-    padding: 3.5px 11px;
+    padding: 5.25px 13px;
     font-size: 1.5rem;
+    background-color: rgba(95, 81, 153, 0.884);
+    border: none;
 }
 #addBtn:hover{
-
+    /* background-color: rgb(81, 82, 153);
+    outline: 1px solid black;
+    outline-offset: 3px; */
 }
 #mainList{ 
 
@@ -57,7 +63,7 @@ ul li {
 
 }
 main{
-    background-color: rgba(118, 54, 38, 0.85);
+    background-color: rgba(118, 54, 38, 0.65);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
