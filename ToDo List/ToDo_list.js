@@ -11,7 +11,7 @@ function addElement(){
         element1.setAttribute('id', 'invalid_input')
         var message = document.createTextNode("cannot be empty");
         element1.appendChild(message);
-        document.getElementById('add').append(element1) 
+        document.getElementById('TODO_list').insertBefore(element1, document.getElementById('TODO_list').childNodes[0]) 
         return;
     }
     document.getElementById('addInput').value = ''
@@ -40,9 +40,9 @@ function removeElement(id){
     document.getElementById('mainList').removeChild(document.getElementById(id))
 }
 function checkElement(id){
-    var mainDiv = document.getElementById(`task${mainList.childElementCount -1}`)
-    var taskText = document.getElementById(`text${mainList.childElementCount -1}`)
-    var closeBtn = document.getElementById(`remove${mainList.childElementCount -1}`)
+    var mainDiv = document.getElementById(id)
+    var taskText = document.getElementById(id)
+    var closeBtn = document.getElementById(id)
     if (mainDiv.classList.contains('task')) {
         mainDiv.setAttribute('class', 'taskChechked')
         taskText.setAttribute('class', 'textChechked')
@@ -55,3 +55,8 @@ function checkElement(id){
 }
 
 addBtn.addEventListener('click', addElement)
+document.getElementById('addInput').addEventListener('keypress', function (e){
+    if (e.key === 'Enter'){
+        addElement()
+    }
+})
