@@ -25,6 +25,7 @@ function addElement(){
     checkbox.setAttribute('class', 'checkbox')
     var taskText = document.createElement('label')
     taskText.setAttribute('class', 'text')
+    taskText.setAttribute('id', `text${mainList.childElementCount}`)
     taskText.setAttribute('for', `checkbox${mainList.childElementCount}`)
     taskText.appendChild(document.createTextNode(elem));
     var closeButtun = document.createElement('button')
@@ -45,14 +46,15 @@ function checkElement(id){
     var mainDiv = document.getElementById(`task${id}`)
     var taskText = document.getElementById(`text${id}`)
     var closeBtn = document.getElementById(`remove${id}`)
+    console.log(mainDiv)
     if (document.querySelector(`#checkbox${id}:checked`) == null) {
         mainDiv.setAttribute('class', 'task')
         taskText.setAttribute('class', 'text')
         closeBtn.setAttribute('class', 'remove')
     } else {
         mainDiv.setAttribute('class', 'taskChecked')
-        taskText.setAttribute('class', 'textChechked')
-        closeBtn.setAttribute('class', 'removeChechked')
+        taskText.setAttribute('class', 'textChecked')
+        closeBtn.setAttribute('class', 'removeChecked')
     }
 }
 function removeWarning(){

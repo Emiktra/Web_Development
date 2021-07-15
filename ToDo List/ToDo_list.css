@@ -42,6 +42,7 @@
     border-top-right-radius: 25px;
     transition: 0.2s;
     padding: 15px 80px;
+    min-height: 300px;
 }
 #TODO_list:hover{
     background-color: rgba(97, 97, 97, 0.65);
@@ -53,6 +54,7 @@
     flex-flow: row nowrap;
     align-items: center;
     border: 1px solid black;
+    width: 450px;
 }
 #addInput{
     padding: 14px;
@@ -60,6 +62,7 @@
     border: none;
     font-family: 'Merienda', cursive;
     font-weight: 600;
+    width: 450px;
 }
 #addBtn{
     padding: 7px 18px;
@@ -76,8 +79,11 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    max-height: 375px;
+    overflow-y: auto;
 }
 #mainList::-webkit-scrollbar{
+    width: 0px;
 }
 main{
     background-color: rgba(114, 65, 53, 0.65);
@@ -113,6 +119,7 @@ body{
     height: 20px;
     opacity: 0.1;
     margin-left: 10px;
+    transition: 0.2s;
 }
 .checkbox:checked{
     width: 20px;
@@ -121,7 +128,10 @@ body{
     margin-left: 10px;
 }
 .checkbox:hover{
-
+    width: 21px;
+    height: 21px;
+    opacity: 0.3;
+    margin-left: 10px;
 }
 .remove{
     padding: 2.5px 6.1px 0px 6.1px;
@@ -129,26 +139,46 @@ body{
     margin: 0 7px;
     background-color: rgba(0, 0, 0, 0);
     font-size: 1.2rem;
+    transition: 0.3s;
+    margin-left: auto;
 }
-.remove:hover{
+.remove:hover, .removeChecked:hover{
     padding: 2.5px 6.1px 0px 6.1px;
     border: none;
     margin: 0 7px;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin-left: auto;
 }
 .removeChecked{
-
+    padding: 2.5px 6.1px 0px 6.1px;
+    color: rgb(221, 73, 73);
+    border: none;
+    margin: 0 7px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2rem;
+    transition: 0.3s;
+    margin-left: auto;
 }
 .text{
     font-family: 'Merienda', cursive;
     font-weight: 500;
     padding: 10px;
+    transition: 0.1s;
+}
+.text:hover, .textChecked:hover{
+    font-family: 'Merienda', cursive;
+    font-weight: 500;
+    padding: 10px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
 }
 .textChecked{
     font-family: 'Merienda', cursive;
     font-weight: 500;
     padding: 10px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.61);
 }
 .task{
     display: flex;
@@ -157,6 +187,8 @@ body{
     border-radius: 15px;
     align-items: center;
     background-color: rgba(54, 65, 110, 0.589);
+    transition: 0.1s;
+    width: 450px;
 }
 .taskChecked{
     display: flex;
@@ -164,8 +196,17 @@ body{
     margin: 1px 0;
     border-radius: 15px;
     align-items: center;
-    background-color: rgba(54, 65, 110, 0.589);
+    background-color: rgba(41, 25, 37, 0.568);
+    transition: 0.1s;
+    width: 450px;
 }
 .task:hover{
-
+    margin: 5px 0px;
+    padding: 3px 10px;
+    background-color: rgba(54, 65, 110, 0.712);
+}
+.taskChecked:hover{
+    margin: 5px 0px;
+    padding: 3px 10px;
+    padding: 3px 10px;
 }
