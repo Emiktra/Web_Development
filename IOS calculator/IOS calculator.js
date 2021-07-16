@@ -93,7 +93,8 @@ numpad.children[17].addEventListener('click', function (){
     document.getElementById('output').innerHTML = visual
 })
 numpad.children[18].addEventListener('click', function (){
-    for (i=0; i < result.length; i++) {
+    let length = result.length
+    for (i=0; i < length; i++) {
         if (result[i] == "/100"){
             for (e=i -1; e > 0; e--){
                 console.log(e)
