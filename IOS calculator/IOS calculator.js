@@ -98,7 +98,7 @@ numpad.children[18].addEventListener('click', function (){
         if (result[i] == "/100"){
             for (e=i -1; e > 0; e--){
                 console.log(e)
-                if (isNaN(result[e])){
+                if (isNaN(result[e] && result != ".")){
                     result.splice(e +1, 0, "(")
                     result.splice(result.length +1, 0, ")")
                     console.log(result)

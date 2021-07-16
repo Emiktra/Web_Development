@@ -13,6 +13,7 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-size: 4rem;
     padding: 10px;
+    overflow: hidden;
 }
 main{
     width: fit-content;
@@ -36,6 +37,19 @@ main{
     margin: 0px 3px;
     font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
+    border: none;
+    font-weight: 600;
+}
+#clear, #multiply, #minus, #plus, #equal{
+    background-color: #FF9500;
+    color: white;
+}
+#clearAll, #percent, #divide{
+    background-color: #D4D4D2;
+}
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero, #dot{
+    background-color: #1C1C1C;
+    color: white;
 }
 #zero{
     width: 125px;
