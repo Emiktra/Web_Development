@@ -1,6 +1,7 @@
 const numpad = document.getElementById('numpad')
 var result = []
 var visual = ""
+var a = ""
 numpad.children[0].addEventListener('click', function(){
     result = []
     visual = ""
@@ -19,7 +20,6 @@ numpad.children[2].addEventListener('click', function(){
 numpad.children[3].addEventListener('click', function (){
     result.pop()
     visual = visual.substring(0, visual.length -1)
-    console.log(result)
     document.getElementById('output').innerHTML = visual
 })
 numpad.children[4].addEventListener('click', function (){
@@ -107,6 +107,18 @@ numpad.children[18].addEventListener('click', function (){
             }
         }
     }
-    document.getElementById('output').innerHTML = eval(result.join(''))
-    visual = ""
+    try {
+        a = eval(result.join(''))
+        result = []
+        document.getElementById('output').innerHTML = a
+        visual = a.toString()
+        a = a.toString().split('')
+        for (i=0; i < a.length;i++) {
+            result.push(a[i])
+        }
+    } catch (error){
+        document.getElementById('output').innerHTML = 'Error'
+        visual = ""
+        result = []
+    }
 })
