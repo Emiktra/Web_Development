@@ -30,9 +30,9 @@ if (onPage.includes('index.html')) {
 }
 if (onPage.includes('about(clarusway).html')) {
     navigationBar.children[1].setAttribute('class', 'isOn')
-    main.insertBefore(Bara, main.children[1])
+    body.insertBefore(Bara, body.children[1])
 }
 if (onPage.includes('services(clarusway).html')) {
     navigationBar.children[2].setAttribute('class', 'isOn')
-    main.insertBefore(Bara, main.children[1])
+    body.insertBefore(Bara, body.children[1])
 }

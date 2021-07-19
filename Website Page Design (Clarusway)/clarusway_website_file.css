@@ -9,11 +9,11 @@ body{
     min-width: 100vh;
 }
 nav{
-    justify-self: flex-start;
+    justify-self: stretch;
     background-color: #35424A;
     display: flex;
     align-items: center;
-    font-family: Roboto;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0;
     border-bottom: solid #A9508B 2px;
 }
@@ -60,6 +60,8 @@ form{
     align-items: center;
     color: white;
     justify-content: space-between;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
 }
 form h3{
     margin: 0px 20px;
@@ -101,11 +103,10 @@ footer p{
 }
 /* MAIN */
 main{
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 main h1,main h2,main h3,main h4,main h5,main h6{
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: Roboto;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
 main p{
@@ -136,6 +137,7 @@ main p{
     display: flex;
     justify-content: space-around;
     align-content: space-around;
+    flex-wrap: wrap;
 }
 #languages div{
     display: flex;
@@ -143,6 +145,8 @@ main p{
     align-items: center;
     text-align: center;
     padding: 30px;
+    max-width: 25%;
+    min-width: 20%;
 }
 #languages > div img{
     width: 100px;
@@ -150,10 +154,58 @@ main p{
 
 /* →main2 */
 #main2{
-    
+    display: flex;
+}
+#main2 div{
+    padding: 10px;
+    margin: 5px;
+}
+#div1, #div2{
+    background-color: #35424A;
+    color: white;
+}
+#div2{
+    height: fit-content;
 }
 
 /* →main3 */
 #main3{
-    
+    display: flex;
+    flex-wrap: wrap;
+}
+#services{
+    margin: 0 40px 30px 40px;
+}
+#services > h2{
+    padding: 5px;
+}
+.option{
+    padding: 20px 10px;
+    background-color: rgba(230, 230, 230, 0.8);
+    margin: 5px;
+    border: 1px solid #CCCCCC;
+}
+#main3 > form{
+    background-color: #35424A;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    align-items: stretch;
+    padding: 10px 50px 20px 20px;
+    max-height: 350px;
+}
+#main3 > form > input{
+    padding: 10px;
+    width: inherit;
+}
+#main3 > form > textarea{
+    resize: none;
+}
+#main3 > form > button{
+    background-color: #E8491D;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    align-self: flex-start;
 }
