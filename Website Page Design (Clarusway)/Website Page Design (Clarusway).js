@@ -25,14 +25,14 @@ Bara +='</div></form>'
 Bara = document.createRange().createContextualFragment(Bara)
 const navigationBar = document.getElementById('jsNav')
 if (onPage.includes('index.html')) {
-    navigationBar.children[0].setAttribute('class', 'isOn')
     main.insertBefore(Bara, main.children[1])
+    navigationBar.children[0].setAttribute('class', 'isOn')
 }
 if (onPage.includes('about(clarusway).html')) {
-    navigationBar.children[1].setAttribute('class', 'isOn')
     body.insertBefore(Bara, body.children[1])
+    navigationBar.children[1].setAttribute('class', 'isOn')
 }
 if (onPage.includes('services(clarusway).html')) {
-    navigationBar.children[2].setAttribute('class', 'isOn')
     body.insertBefore(Bara, body.children[1])
+    navigationBar.children[2].setAttribute('class', 'isOn')
 }
