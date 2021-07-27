@@ -1,0 +1,22 @@
+div{
+    float: left;
+    background-color: lawngreen;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+}
+@mixin container($color) {
+    width: 100px;
+    height: 100px;
+    background-color: $color;
+    margin: 15px;
+}
+#first{
+    @include container(red)
+}
+#second{
+    @include container(green)
+}
+#third{
+    @include container(navy)
+}

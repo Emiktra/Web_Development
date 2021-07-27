@@ -1,0 +1,29 @@
+div {
+  float: left;
+  background-color: lawngreen;
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+
+#first {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 15px;
+}
+
+#second {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 15px;
+}
+
+#third {
+  width: 100px;
+  height: 100px;
+  background-color: navy;
+  margin: 15px;
+}
+/*# sourceMappingURL=mixin.css.map */

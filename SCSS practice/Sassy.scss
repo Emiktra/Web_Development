@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$primaryColor: rgb(0, 255, 255);
+$switchButton: 100px;
+$textColor: white;
+
+nav{
+    border: 1px solid black;
+    &::after{
+        clear: both;
+    }
+}
+.left{
+    list-style: none;
+    float: left;
+    background-color: $primaryColor;
+    li{
+        $secondaryColor: darkgreen !global;
+        display: inline-block;
+        margin: 20px;
+        background-color: $secondaryColor;
+        &:first-child{
+            padding: 20px;
+        }
+        a{
+            color: $textColor;
+            text-decoration: none;
+        }
+    }
+}
+.right{
+    float: right;
+    background-color: $primaryColor;
+}
+.Clarusway, .Linkedin{
+    padding: 10px;
+    display: inline-block;
+    width: $switchButton;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $textColor;
+}

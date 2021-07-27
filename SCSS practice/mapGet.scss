@@ -1,0 +1,19 @@
+$tema : (
+    "first" : green,
+    "second" : black,
+    "mini" : purple
+); //basically an object or a dict
+
+$weight : (
+    "thin" : 300,
+    "normal" : 400,
+    "thick" : 700
+);
+
+body{
+    background-color: map-get($tema , $key: "mini");
+} //method for calling it
+h1{
+    color: map-get($map: $tema, $key: "second");
+    font-weight:map-get($map: $weight, $key: "thick")
+}
