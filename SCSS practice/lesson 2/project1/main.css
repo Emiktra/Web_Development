@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+h4 {
+  font-size: 10px;
+  font-weight: 300px;
+}
+
+.button, .button-error, .button-success, .button-warning {
+  float: left;
+  padding: 0;
+  margin: 5px;
+  color: green;
+}
+
+.button-error {
+  background-color: tomato;
+}
+
+.button-success {
+  background-color: blue;
+}
+
+.button-warning {
+  background-color: orange;
+}
+
+footer {
+  float: left;
+  background-color: orange;
+}
+
+#contact {
+  float: left;
+  background-color: tomato;
+}
+
+.dark {
+  float: left;
+  background-color: tomato;
+}
+
+.light {
+  background-color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

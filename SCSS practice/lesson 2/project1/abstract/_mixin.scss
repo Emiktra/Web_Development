@@ -1,0 +1,9 @@
+@mixin boyut ($width: null, $height: null){
+    width: $width;
+    height: $height;
+}
+
+@mixin color ($backg-color, $font-color) {
+    background-color: $backg-color;
+    color: $font-color;
+}

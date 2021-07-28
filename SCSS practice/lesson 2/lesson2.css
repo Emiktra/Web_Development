@@ -1,0 +1,101 @@
+body {
+  background-color: orange;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  border: 1px solid red;
+}
+
+.item-1 {
+  width: 50px;
+  padding: 15px;
+  background-color: #24af7a;
+  margin: 5px 0;
+}
+
+.item-2 {
+  width: 100px;
+  padding: 15px;
+  background-color: #426ea8;
+  margin: 5px 0;
+}
+
+.item-3 {
+  width: 150px;
+  padding: 15px;
+  background-color: #ccce54;
+  margin: 5px 0;
+}
+
+.item-4 {
+  width: 200px;
+  padding: 15px;
+  background-color: #45084d;
+  margin: 5px 0;
+}
+
+.item-5 {
+  width: 250px;
+  padding: 15px;
+  background-color: #926ec0;
+  margin: 5px 0;
+}
+
+.item-2 {
+  font-size: 20px;
+}
+
+.item-5 {
+  font-size: 50px;
+}
+
+.item-1 {
+  font-size: 10px;
+}
+
+.item-3 {
+  font-size: 30px;
+}
+
+.item-4 {
+  font-size: 40px;
+}
+
+.item-1 {
+  font-weight: 100;
+}
+
+.item-2 {
+  font-weight: 200;
+}
+
+.item-3 {
+  font-weight: 300;
+}
+
+.item-4 {
+  font-weight: 400;
+}
+
+.item-5 {
+  font-weight: 500;
+}
+
+.item-6 {
+  font-weight: 600;
+}
+/*# sourceMappingURL=lesson2.css.map */
