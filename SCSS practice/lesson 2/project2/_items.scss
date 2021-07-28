@@ -1,0 +1,15 @@
+.item {
+    text-align: center;
+    font-size: 25px;
+  }
+@for $i from 1 to 5{
+    .item-#{$i}{
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #EEF109;
+    font-size: 20px;
+    background-color: #A7A413;
+    border-radius: 15px;
+    color: #E5E7F0;
+    }
+}

@@ -1,0 +1,167 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.login-header {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.login-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.login-content input {
+  height: 50px;
+  padding: 0px 20px;
+  border: 2px solid #DBDBDB;
+  margin-bottom: 20px;
+}
+
+.login-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.login-footer a {
+  color: #A19F9F;
+}
+
+.login-footer a:hover {
+  color: crimson;
+}
+
+.login-footer a:first-child {
+  background-color: royalblue;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  border-radius: 3px;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.signup {
+  display: block;
+  color: bisque;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  margin: 25px;
+}
+
+.signup a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.item {
+  text-align: center;
+  font-size: 25px;
+}
+
+.item-1 {
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid #EEF109;
+  font-size: 20px;
+  background-color: #A7A413;
+  border-radius: 15px;
+  color: #E5E7F0;
+}
+
+.item-2 {
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid #EEF109;
+  font-size: 20px;
+  background-color: #A7A413;
+  border-radius: 15px;
+  color: #E5E7F0;
+}
+
+.item-3 {
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid #EEF109;
+  font-size: 20px;
+  background-color: #A7A413;
+  border-radius: 15px;
+  color: #E5E7F0;
+}
+
+.item-4 {
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid #EEF109;
+  font-size: 20px;
+  background-color: #A7A413;
+  border-radius: 15px;
+  color: #E5E7F0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: royalblue;
+}
+
+.clarusway {
+  margin: 30px;
+  padding: 20px;
+  border: 3px solid purple;
+  border-radius: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(139, 16, 139, 0.5);
+}
+/*# sourceMappingURL=main.css.map */

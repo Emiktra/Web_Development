@@ -1,0 +1,45 @@
+.container {
+    width: 400px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 30px;
+    margin-top: 30px;
+  }
+  .login-header {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    input {
+      height: 50px;
+      padding: 0px 20px;
+      border: 2px solid #DBDBDB;
+      margin-bottom: 20px;
+    }
+  }
+  .login-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 250ms all;
+    a{
+      color: #A19F9F;
+      &:hover{
+        color: crimson;
+      }
+      &:first-child {
+        background-color: royalblue;
+        width: 90px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        border-radius: 3px;
+        transition: 250ms all;
+      }
+    }
+  }
