@@ -46,16 +46,9 @@ function checkElement(id){
     var mainDiv = document.getElementById(`task${id}`)
     var taskText = document.getElementById(`text${id}`)
     var closeBtn = document.getElementById(`remove${id}`)
-    console.log(mainDiv)
-    if (document.querySelector(`#checkbox${id}:checked`) == null) {
-        mainDiv.setAttribute('class', 'task')
-        taskText.setAttribute('class', 'text')
-        closeBtn.setAttribute('class', 'remove')
-    } else {
-        mainDiv.setAttribute('class', 'taskChecked')
-        taskText.setAttribute('class', 'textChecked')
-        closeBtn.setAttribute('class', 'removeChecked')
-    }
+    mainDiv.classList.toggle('taskChecked')
+    taskText.classList.toggle('textChecked')
+    closeBtn.classList.toggle('removeChecked')
 }
 function removeWarning(){
     if (Boolean(document.getElementById('invalid_input'))) {

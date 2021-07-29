@@ -45,7 +45,7 @@
     min-height: 300px;
 }
 #TODO_list:hover{
-    background-color: rgba(97, 97, 97, 0.65);
+    background-color: rgba(97, 97, 97, 0.3);
     padding: 20px 100px;
     border-radius: 0;
 }
@@ -86,7 +86,7 @@
     width: 0px;
 }
 main{
-    background-color: rgba(114, 65, 53, 0.65);
+    background-color: rgba(216, 118, 94, 0.65);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -209,4 +209,5 @@ body{
     margin: 5px 0px;
     padding: 3px 10px;
     padding: 3px 10px;
+    background-color: rgba(53, 33, 48, 0.568);
 }
