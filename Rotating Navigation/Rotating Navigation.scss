@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    nav{
+        position: absolute;
+        top: 0;
+        background-color: rgb(248, 117, 94);
+        border-radius: 0 0 100% 0;
+        width: 100px;
+        height: 100px;
+        z-index: 100;
+    }
+    & > div{
+        transform-origin: top left;
+        background-color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 100vh;
+        transition-delay: 0.2s;
+        transition: 1s;
+        main{
+            font-family: 'Lato', sans-serif;
+            max-width: 95%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin: 90px 0;
+            #img{
+                display: flex;
+                max-width: 1000px;
+                img{
+                    max-width: 100%
+                }
+            }
+            h1{
+                margin-bottom: 1px;
+                align-self: flex-start;
+                max-width: 1000px
+            }
+            h3{
+                align-self: flex-start;
+                max-width: 1000px
+            }
+            h5{
+                margin-top: 0;
+                font-style: italic;
+                font-weight: 200;
+                align-self: flex-start;
+                max-width: 1000px
+            }
+            p{
+                font-weight: 500;
+                line-height: 25px;
+                max-width: 1000px;
+            }
+        }
+    }
+}
+.rotate{
+    transition-delay: 0.2s;
+    transition: 1s;
+    transform: rotate(-20deg);
+}
