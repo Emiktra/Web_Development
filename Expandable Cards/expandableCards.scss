@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+body{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 30px 7.5%;
+}
+$BcLinks: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'),
+          url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'),
+          url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80'),
+          url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80'),
+          url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');  
+@for $i from 1 through 5 {
+    #pic#{$i}{
+        background-image: nth($BcLinks, $i);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 10px;
+        height: 95vh;
+        border-radius: 50px;
+        display: flex;
+        transition: 1s;
+        font-family: 'Oswald', sans-serif;
+        span{
+            align-self: flex-end;
+            padding: 10px;
+            text-align: left;
+        }
+    }
+}
+.notWide{
+    flex-grow: 0.5;
+    color: rgba(0,0,0,0);
+    flex-basis: 4%;
+}
+.wide{
+    flex-grow: 5;
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+}
