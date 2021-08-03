@@ -6,7 +6,6 @@
 nav {
   border: 1px solid black;
 }
-
 nav::after {
   clear: both;
 }
@@ -14,19 +13,16 @@ nav::after {
 .left {
   list-style: none;
   float: left;
-  background-color: cyan;
+  background-color: aqua;
 }
-
 .left li {
   display: inline-block;
   margin: 20px;
   background-color: darkgreen;
 }
-
 .left li:first-child {
   padding: 20px;
 }
-
 .left li a {
   color: white;
   text-decoration: none;
@@ -34,7 +30,7 @@ nav::after {
 
 .right {
   float: right;
-  background-color: cyan;
+  background-color: aqua;
 }
 
 .Clarusway, .Linkedin {
@@ -44,5 +40,4 @@ nav::after {
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-}
-/*# sourceMappingURL=Sassy.css.map */
+}/*# sourceMappingURL=Sassy.css.map */

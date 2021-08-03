@@ -2,8 +2,7 @@
   margin: 0px;
   padding: 0px;
   border: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -21,16 +20,10 @@
 }
 
 .login-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-bottom: 20px;
 }
-
 .login-content input {
   height: 50px;
   padding: 0px 20px;
@@ -39,27 +32,17 @@
 }
 
 .login-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 250ms all;
+  justify-content: space-between;
+  align-items: center;
   transition: 250ms all;
 }
-
 .login-footer a {
   color: #A19F9F;
 }
-
 .login-footer a:hover {
   color: crimson;
 }
-
 .login-footer a:first-child {
   background-color: royalblue;
   width: 90px;
@@ -68,14 +51,12 @@
   line-height: 40px;
   color: white;
   border-radius: 3px;
-  -webkit-transition: 250ms all;
   transition: 250ms all;
 }
 
 .signup {
   display: block;
   color: bisque;
-  -webkit-transition: 300ms all;
   transition: 300ms all;
   margin: 25px;
 }
@@ -138,20 +119,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: royalblue;
 }
 
@@ -164,4 +136,4 @@ body {
   color: white;
   background-color: rgba(139, 16, 139, 0.5);
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */

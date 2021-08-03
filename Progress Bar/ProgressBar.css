@@ -24,28 +24,23 @@
 
 .lineLayout {
   width: 70px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   background-color: rgba(170, 173, 200, 0.493);
 }
 
 .notSelected {
   border: solid 3px rgba(170, 173, 200, 0.493);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .selected {
   border: solid 3px rgba(85, 74, 236, 0.822);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .notSelectedLine {
   width: 0%;
   height: 4px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: rgba(74, 90, 236, 0.75);
 }
@@ -54,7 +49,6 @@
   background-color: rgba(74, 90, 236, 0.75);
   width: 100%;
   height: 4px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -83,19 +77,10 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
   height: 80vh;
   -webkit-user-select: none;
   /* Safari */
@@ -111,16 +96,10 @@ h1 {
   font-weight: 500;
   margin-bottom: 80px;
   font-style: oblique;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 #progressBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-}
-/*# sourceMappingURL=ProgressBar.css.map */
+  flex-flow: row nowrap;
+}/*# sourceMappingURL=ProgressBar.css.map */

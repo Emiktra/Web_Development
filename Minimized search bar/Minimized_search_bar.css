@@ -1,43 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0;
 }
-
-body main {
-  margin-top: 40vh;
+body > p {
+  padding: 20px 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: #202020;
+  height: 175px;
+  padding: 10px;
+}
+body nav ul {
+  list-style: none;
+  color: #fff;
+  display: flex;
+  align-self: flex-end;
+  padding: 10px;
+  margin-bottom: auto;
+}
+body nav ul a {
+  padding: 5px 10px;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+body nav ul a:hover {
+  color: #0BDA51;
+}
+body nav > h1 {
+  color: #2296BC;
+  margin: 0;
+  font-style: italic;
+  font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body nav > h5 {
+  color: #2296BC;
+  margin: 0 0 50px 0;
+}
+body nav main {
   min-height: 5%;
-  border: 1px solid black;
+  border: 2px solid #0BDA51;
   padding: 15px;
-  border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  border-radius: 10px;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  background-color: #fff;
 }
-
-body main i {
-  font-size: 25px;
-  margin: 0 5px;
+body nav main i {
+  font-size: 26px;
 }
-
-body main input {
+body nav main input {
   outline: none;
   border: none;
-  margin-left: 10px;
+  position: relative;
   font-size: 1rem;
+  left: 10px;
 }
-
-body main button {
+body nav main button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   font-weight: 700;
@@ -45,41 +73,34 @@ body main button {
 }
 
 .open {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: 0.25s ease-in-out;
 }
 
 .closed {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: 0.25s ease-in-out;
+}
+
+.btnClosed {
+  display: none;
+}
+
+.btnOpen {
+  margin: 0 3px;
 }
 
 .inputOpen {
   width: 250px;
   visibility: visible;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.btnOpen {
-  margin-right: 3px;
-  visibility: visible;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 .inputClosed {
-  width: 0;
-  visibility: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.btnClosed {
   width: 0px;
   visibility: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  margin-right: 3px;
+  transition: 0.25s;
 }
-/*# sourceMappingURL=Minimized_search_bar.css.map */
+
+.inputClosed2 {
+  display: none;
+  transition: 0.25s;
+}/*# sourceMappingURL=Minimized_search_bar.css.map */

@@ -1,62 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+$black: #202020;
+$black2: #3A3A3C;
+$green: #0BDA51;
+$blue: #2296BC;
 body{
     -webkit-user-select: none;      
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    display: flex;
-    justify-content: center;
-    main{
-        margin-top: 40vh;
-        min-height: 5%;
-        border: 1px solid black;
-        padding: 15px;
-        border-radius: 50px;
+    margin: 0;
+    & >p{
+        padding: 20px 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav{
         display: flex;
-        align-items: center;
-        i{
-            font-size: 25px;
-            margin: 0 5px;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-color: $black;
+        height: 175px;
+        padding: 10px;
+        ul{
+            list-style: none;
+            color: #fff;
+            display: flex;
+            align-self: flex-end;
+            padding: 10px;
+            margin-bottom: auto;
+            a{
+                padding: 5px 10px;
+                font-family: 'Rubik', sans-serif;
+                color: #fff;
+                text-decoration: none;
+                &:hover{
+                color: $green;
+                }
+            }
         }
-        input{
-            outline: none;
-            border: none;
-            margin-left: 10px;
-            font-size: 1rem;
+        & > h1{
+            color: $blue;
+            margin: 0;
+            font-style: italic;
+            font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        button{
-            background-color: rgba(0,0,0,0);
-            border: none;
-            font-weight: 700;
-            font-size: 1.2rem;
+        & > h5{
+            color: $blue;
+            margin: 0 0 50px 0;
+        }
+        main{
+            min-height: 5%;
+            border: 2px solid $green;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            i{
+                font-size: 26px;
+            }
+            input{
+                outline: none;
+                border: none;
+                position: relative;
+                font-size: 1rem;
+                left: 10px;
+            }
+            button{
+                background-color: rgba(0,0,0,0);
+                border: none;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
         }
     }
 }
 .open{
-    transition: 0.5s;
+    transition: 0.25s ease-in-out;
 }
 .closed{
-    transition: 0.5s;
+    transition: 0.25s ease-in-out;
+}
+.btnClosed{
+    display: none;
+}
+.btnOpen{
+    margin:0 3px;
 }
 .inputOpen{
     width: 250px;
     visibility: visible;
-    transition: 0.5s;
-}
-.btnOpen{
-    margin-right: 3px;
-    visibility: visible;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 .inputClosed{
-    // display: none;
-    width: 0;
-    visibility: hidden;
-    transition: 0.5s;
-}
-.btnClosed{
-    // display: none;
     width: 0px;
     visibility: hidden;
-    transition: 0.5s;
-    margin-right: 3px;
+    transition: 0.25s;
+}
+.inputClosed2{
+    display: none;
+    transition: 0.25s;
 }
