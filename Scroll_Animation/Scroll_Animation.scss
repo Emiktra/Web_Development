@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+body{
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    & >h1{
+        text-align: center;
+        border: 5px solid rgba(7, 5, 5, 0.109);
+        border-radius: 0 0 50px 50px;
+        padding: 70px 0;
+        width: 100%;
+        font-size: 2.4rem;
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        background-color: #c0c0c0;
+        height: 50px;
+    }
+    main{
+
+    }
+}
+.main{
+    height: 150px;
+    padding: 5px;
+    margin: 40px;
+}
+.main h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.7rem;
+}
+.hidden{
+    position: relative;
+    left: -210vh;
+}
+.notHidden{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
