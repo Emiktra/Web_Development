@@ -7,6 +7,7 @@ function Person (firstName, birthYear){
 }
 const matthew = new Person("Matthew", 1986)
 console.log(matthew)
+console.log(matthew.calcAge())
 
 
 // var my = {name: "Matt"};

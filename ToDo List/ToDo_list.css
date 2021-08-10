@@ -24,28 +24,28 @@
     font-style: oblique;
     font-weight: 600;
     padding: 15px 80px;
-    background-color: rgba(42, 49, 50, 0.185);
-    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.65);
+    border-radius: 5px;
     transition: 0.2s;
 }
 #title:hover{
-    background-color: rgba(42, 49, 50, 0.384);
+    background-color: rgb(255, 0, 0);
     padding: 20px 100px;
     letter-spacing: 1px;
+    /* box-shadow: 0px 0px 50px 50px red, 0px 0px 100px 100px #fff; */
+
 }
 #TODO_list{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color: rgba(42, 49, 50, 0.185);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    /* background-color: rgba(42, 49, 50, 0.185); */
     transition: 0.2s;
     padding: 15px 80px;
     min-height: 300px;
 }
 #TODO_list:hover{
-    background-color: rgba(97, 97, 97, 0.3);
+    /* background-color: rgba(97, 97, 97, 0.3); */
     padding: 20px 100px;
     border-radius: 0;
 }
@@ -81,12 +81,13 @@
     align-items: center;
     max-height: 375px;
     overflow-y: auto;
+    padding-right: 7%;
 }
 #mainList::-webkit-scrollbar{
     width: 0px;
 }
 main{
-    background-color: rgba(216, 118, 94, 0.65);
+    /* background-color: rgba(238, 79, 79, 0); */
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -184,7 +185,7 @@ body{
     display: flex;
     border: 3px solid black;
     margin: 1px 0;
-    border-radius: 15px;
+    border-radius: 5px;
     align-items: center;
     background-color: rgba(54, 65, 110, 0.589);
     transition: 0.1s;
@@ -194,7 +195,7 @@ body{
     display: flex;
     border: 3px solid black;
     margin: 1px 0;
-    border-radius: 15px;
+    border-radius: 5px;
     align-items: center;
     background-color: rgba(41, 25, 37, 0.568);
     transition: 0.1s;
