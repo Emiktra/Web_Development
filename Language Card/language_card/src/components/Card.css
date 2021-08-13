@@ -1,0 +1,23 @@
+.indCardCont {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #FBECDC;
+    border-radius: 15px;
+    height: 150px;
+    width:250px;
+}
+
+.indCardCont:hover{
+    box-shadow: 0 0 4px 2px navy;
+    transition: 0.2s ease-in-out;
+}
+.cardImg:hover{
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}
+.infoLang{
+    text-align: start;
+}

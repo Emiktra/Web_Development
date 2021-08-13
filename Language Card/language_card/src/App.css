@@ -1,0 +1,26 @@
+.App{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#imgReact{
+  width: 300px;
+}
+#cardContainer{
+  display: flex;
+  flex-flow: row wrap;
+  width: 600px;
+  justify-content: space-evenly;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+.cardImg{
+  height: 5.5rem;
+  width: 120px;
+  object-fit: contain;
+}
