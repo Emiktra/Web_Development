@@ -59,7 +59,5 @@ function removeWarning(){
 inputArea.addEventListener('click', removeWarning)
 addBtn.addEventListener('click', addElement)
 document.getElementById('addInput').addEventListener('keypress', function (e){
-    if (e.key === 'Enter'){
-        addElement()
-    }
+    if (e.key === 'Enter'){addElement()}
 })
