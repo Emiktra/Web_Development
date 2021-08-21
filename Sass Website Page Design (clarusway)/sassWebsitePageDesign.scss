@@ -1,0 +1,95 @@
+body{font-family: 'Kumbh Sans', sans-serif;
+margin: 0 25px;
+background-color: #f7f7f7;}
+nav{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    h1{
+        font-weight: 300;
+        font-size: 32px;
+        margin: 0;
+        cursor: pointer;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li{
+            padding: 0 16px;
+            .navigationOptions{
+                transition: 0.3s ease;
+                cursor: pointer;
+                &:hover{
+                    color: #00cc66;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+        .navSignup{
+            padding: 12px 24px;
+            margin-left: 16px;
+            background-color: #00cc66;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background-color: #fb4b4e;
+                transition: 0.3s ease;
+            }
+        }
+    }}
+main{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    div{
+        margin-right: 50px;
+        #greenTitle{
+            color: #00cc66;
+            font-size: 64px;
+            margin: 0;}
+        #blackTitle{
+            font-size: 64px;
+            color: #222121;
+            margin: 0;}
+        h3{
+            color: #222121;
+            font-size: 32px;
+            margin: 16px 0 0 0;}
+        button{
+            font-size: 16px;
+            color: #fff;
+            margin-top: 32px;
+            padding: 14px 32px;
+            border: none;
+            background-color: #00cc66;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transition:0.3s;
+            outline: none;
+            a{
+                position: relative;
+                z-index: 1;}
+            &::after{
+                transition: 0.3s;
+                position: absolute;
+                content: '';
+                height: 100%;
+                width: 0;
+                background: #fb4b4e;
+                border-radius: 5px;
+                top: 0;
+                left: 0;}
+            &:hover::after{
+                width: 100%;}}}
+    img{
+        width: 50%;
+        min-width: 400px;
+        flex-shrink: 0.5;}}
