@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+#randomUserBtn {
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7a9ea7;
+    user-select: none;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#randomUserBtn:hover{
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #323232;
+    transition: 0.2s;
+    background-color: #5d7a81;
+}
+#randomUserBtn:active{
+    box-shadow: 0 0 0 7px #fff, 0 0 0 8px #323232;
+    transition: 0.2s;
+    background-color: #94dbeb;
+}
+.OuterWelcome{
+    padding: 20px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(155, 219, 155);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+#newUserBtn {
+    user-select: none;
+    padding: 16px 35px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 300ms;
+}
+#newUserBtn:hover{
+    filter: grayscale(50%);
+    background-color: rgb(155, 219, 155);
+}
+#newUserBtn:active{
+    background-color: rgb(155, 219, 155);
+    filter: grayscale(100%);
+}
+.UserWelcomeDiv{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+    
+}
+
+.OuterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: nowrap column;
+}
+
+.UserContainer {
+    width: 550px;
+    padding: 20px 30px;
+    background-color: #ace2ee;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.profilePic {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Innercontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    width: 77%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+h3 {
+    width: 78%;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin: 15px 0;
+}
+.starth1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin: 15px 0;
+
+}
+i {
+    width: 22%;
+    font-size: 25px;
+    color: rgb(240, 116, 94);
+}
+
+.picture {
+    border-radius: 50%;
+}
