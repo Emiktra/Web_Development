@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.nav{
+  list-style-type: none;
+  width: 550px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
