@@ -5,7 +5,7 @@ import FunctionBased from './components/FunctionBased';
 function App() {
   return (
     <div className="App">
-      <ClassBased name = {"steven"} age = {36}/>
+      {false ? <ClassBased name = {"steven"} age = {36}/> : null}
       <br/>
       <br/>
       <FunctionBased />
