@@ -1,6 +1,41 @@
 .App {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
+  flex-flow: column nowrap;
+  height: 100vh;
+  background: linear-gradient(to bottom,  #fec861 0%,#fec861 40%,#f1f4f7 40%,#f1f4f7 100%)
+}
+#designContainer{
+  background-color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 50px;
+  width: 80%;
+  border: 2px solid #c48fb9;
+  border-radius: 5px;
+  min-width: 700px;
+}
+#designContainer > h2{
+  color: #9e6693;
+  font-weight: 400;
+  font-size: 28px;
+}
+#designContainer > h1{
+  color: #838283;
+  font-weight: 500;
+  font-style: italic;
+}
+#designContainer > img{
+  width: 40px;
+  margin: 0 30px;
+}
+.App > img{
+  width: 90px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }

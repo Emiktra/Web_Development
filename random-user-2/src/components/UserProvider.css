@@ -1,4 +1,86 @@
 .photoIcons{
     width: 50px;
+    border: 1px solid rgb(107, 99, 99);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
 }
-.photoIconContainer{}
+.photoIconContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.profilePic{
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 5px #fff, 0 0 0 6px #d0d2d4, 0 0 13px 1px rgb(219, 122, 122);
+}
+#CardContainer{
+    margin: 0;
+    width: 800px ;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background: linear-gradient(to bottom,  #f1f4f7 0%,#f1f4f7 160px, #d0d2d4 160px, #d0d2d4 162px,#fff 162px,#fff 100%);
+    box-shadow: 0 0 10px 0 #aeb1b3;
+}
+.infoTitle > h1{
+    font-weight: 400;
+    margin-top: 5px;
+}
+.infoTitle > h4{
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    flex-flow: nowrap row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+.buttonContainer > button{
+    padding: 8px 35px;
+    color: white;
+    background-color: #9d4d8c;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.buttonContainer > button:hover{
+    transition: 0.5s;
+    background-color: #ffc861;
+    color: #000;
+}
+#userList{
+    width: 90%;
+}
+.ListTitle{
+    background-color: #fec761;
+    color: #9d4d8c;
+    position: sticky;
+    top: 0;
+}
+.invisible{
+    display: none;
+}
+.ListTitle > th{
+    padding: 10px;
+}
+#userList td{
+    padding: 10px;
+}
+.userListCapsule{
+    max-height: 300px;
+    overflow: auto;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
