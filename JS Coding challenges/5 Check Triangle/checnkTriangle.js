@@ -12,6 +12,11 @@ sendInfoBtn.addEventListener("click", ()=>{
     else{createTriangle(data); break}}}
 })
 
+
+// we can use slice() to assign a copy of an array to the new variable
+// because just assigning it doesn't seperate it from the original one
+// changing the original will result in both of them changing an vise versa
+
 const createTriangle=(triangle)=>{
     // check if it is a valid triangle
     if((parseFloat(triangle[1])+parseFloat(triangle[2]))< parseFloat(triangle[0]) || (parseFloat(triangle[0])+parseFloat(triangle[2]))< parseFloat(triangle[1]) || (parseFloat(triangle[1])+parseFloat(triangle[0]))< parseFloat(triangle[2])){

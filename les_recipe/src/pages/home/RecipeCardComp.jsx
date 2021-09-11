@@ -4,7 +4,6 @@ import { RecipeCard, RecipeImage, Button, RecipeHeader } from './HomeStyle';
 import defaultImg from '../../assets/default-image.jpg';
 
 const RecipeCardComp = ({ recipe }) => {
-  // console.log(recipe)
   const history = useHistory();
   const moreClick = () => {
     // history.push("/view")

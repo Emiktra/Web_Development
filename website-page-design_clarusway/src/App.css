@@ -1,0 +1,9 @@
+.App {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 100vh;
+}
